@@ -5,15 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "DEBUG=server nodemon server.js",
-    "start": "DEBUG=server node server.js"
+    "start:dev": "DEBUG=coma-bien:* nodemon server.js",
+    "start": "DEBUG=coma-bien:* node server.js"
   },
   "author": "David Daza <03dazal@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "debug": "^4.0.1",
+    "dotenv": "^6.0.0",
     "ejs": "^2.6.1",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "neo4j": "^2.0.0-RC2",
+    "neo4j-driver": "^1.6.3"
   },
   "devDependencies": {
     "eslint": "^5.5.0",
