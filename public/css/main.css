@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Kelso Sans';
+  src: url(../fonts/Kelson_Sans_Light.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Kelso Sans';
+  src: url(../fonts/Kelson_Sans_Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Kelso Sans';
+  src: url(../fonts/Kelson_Sans_Bold.otf);
+  font-weight: bold;
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  outline: 0;
+  font-family: 'Kelso Sans', sans-serif;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  padding: 15px 0;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+
+nav .nav__link:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  background-color: #eeeeee;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+}

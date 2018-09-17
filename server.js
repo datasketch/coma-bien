@@ -15,7 +15,7 @@ app.get('/', async (req, res, next) => {
   try {
     const result = await services.getCards()
     const cards = result.records.map(record => record.toObject().n.properties)
-    res.render('index', { cards })
+    res.render('pages/cards', { cards })
   } catch (error) {
     return next(error)
   }
@@ -26,7 +26,7 @@ app.get('/tips', async (req, res, next) => {
   try {
     const result = await services.getTips()
     const tips = result.records.map(record => record.toObject().n.properties)
-    res.render('index', { tips })
+    res.render('pages/tips', { tips })
   } catch (error) {
     return next(error)
   }
@@ -37,7 +37,7 @@ app.get('/ingredientes', async (req, res, next) => {
   try {
     const result = await services.getIngredients()
     const ingredients = result.records.map(record => record.toObject().n.properties)
-    res.render('index', { ingredients })
+    res.render('pages/ingredients', { ingredients })
   } catch (error) {
     return next(error)
   }
